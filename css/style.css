@@ -1,0 +1,857 @@
+/**
+ * TABLE OF CONTENTS
+ * 
+ * 1. General
+ *   1.1. Fonts
+ *       1.1.1. Lobster
+ *       1.1.2. PT Sans
+ *       1.1.3. Novecento Wide
+ *       1.1.4. Batch
+ *       1.1.5. Ebis
+ *   1.2. Body
+ *       1.2.1. Selection colors
+ *       1.2.2. Icons
+ *       1.2.3. Headings
+ *       1.2.4. Anchors
+ *       1.2.5. Page wrap
+ * 2. Snail
+ *   2.1. Track
+ *   2.2. Snail
+ *   2.3. Shell
+ *   2.4. Percentage
+ *   2.5. Breathe in
+ *   2.6. Body
+ *   2.7. Eyes
+ *   2.8. Trail
+ *   2.9. Bubble holder
+ * 3. Counter
+ *   3.1. Info
+ * 4. Toggles
+ * 5. Screens
+ *   5.1. Fixed
+ *   5.2. Parallax
+ * 6. Slider
+ *   6.1. Slide 
+ * 7. Newsletter
+ * 8. Social
+ * 9. Logo
+ * 10. Footer
+ * 11. Responsiveness
+ *   11.1. Max 479px
+ *   11.2. Min 480px
+ *   11.3. Min 768px
+ *   11.4. Min 980px
+ *   11.5. Min 1200px
+ * 
+ * Copyright 2013 Stephino
+ */
+
+/* 1. General */
+/** 1.1. Fonts **/
+
+/*** 1.1.1. Lobster ***/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/*** 1.1.2. PT Sans ***/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,latin-ext,cyrillic);
+
+/*** 1.1.3. Novecento Wide ***/
+@font-face {font-family: 'NovecentowideBold';src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot');src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.svg#NovecentowideBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideBook';src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot');src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.woff') format('woff'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.svg#NovecentowideBook') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideDemiBold';src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot');src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.svg#NovecentowideDemiBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideLight';src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot');src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.woff') format('woff'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.svg#NovecentowideLight') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideMedium';src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot');src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.woff') format('woff'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.svg#NovecentowideMedium') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideNormal';src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot');src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.woff') format('woff'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.svg#NovecentowideNormal') format('svg');font-weight: normal;font-style: normal;}
+
+/*** 1.1.4. Batch ***/
+@font-face {
+    font-family: 'batchregular';
+    src: url('../img/fonts/batch/batch-icons-webfont.eot');
+    src: url('../img/fonts/batch/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/batch/batch-icons-webfont.woff') format('woff'),
+         url('../img/fonts/batch/batch-icons-webfont.ttf') format('truetype'),
+         url('../img/fonts/batch/batch-icons-webfont.svg#batchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** 1.1.5. Ebis ***/
+@font-face {
+    font-family: 'ebisuregular';
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuregular-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.svg#ebisuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ebisuextralight';
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.svg#ebisuextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisulight';
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisulight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisulight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisulight-webfont.svg#ebisulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisubold';
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot');
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisubold-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisubold-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisubold-webfont.svg#ebisubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/** 1.2. Body **/
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    text-rendering: geometricprecision;
+}
+
+/** 1.2.1. Selection colors ***/
+::selection { 
+    color: #fff;
+    text-shadow: none !important;
+}
+::-moz-selection {
+    color: #fff;
+    text-shadow: none !important;
+}
+body.red ::selection { 
+    background: red;
+}
+body.red ::-moz-selection {
+    background: red;
+}
+body.green ::selection { 
+    background: #7fcb54;
+}
+body.green ::-moz-selection {
+    background: #7fcb54;
+}
+body.orange ::selection { 
+    background: orange;
+}
+body.orange ::-moz-selection {
+    background: orange;
+}
+body.yellow ::selection { 
+    background: yellow;
+}
+body.yellow ::-moz-selection {
+    background: yellow;
+}
+body.blue ::selection { 
+    background: #11b3f2;
+}
+body.blue ::-moz-selection {
+    background: #11b3f2;
+}
+body.indigo ::selection { 
+    background: indigo;
+}
+body.indigo ::-moz-selection {
+    background: indigo;
+}
+body.violet ::selection { 
+    background: violet;
+}
+body.violet ::-moz-selection {
+    background: violet;
+}
+body.black ::selection { 
+    background: black;
+}
+body.black ::-moz-selection {
+    background: black;
+}
+body.white ::selection { 
+    background: white;
+}
+body.white ::-moz-selection {
+    background: white;
+}
+body.grey ::selection { 
+    background: grey;
+}
+body.grey ::-moz-selection {
+    background: grey;
+}
+
+/*** 1.2.2. Icons ***/
+.icon {
+    font-family: batchregular;
+    font-style: normal;
+}
+
+/*** 1.2.3. Headings ***/
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lobster;
+    color: #000;
+}
+h1 {
+    font-size: 44px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #fff;
+    text-align: center;
+    line-height: 60px;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0 0 1px #FFFFFF;
+    font-family: NovecentowideLight;
+}
+h3 {
+    color: #000;
+    font-size: 15px;
+    font-family: NovecentowideBook;
+}
+
+/*** 1.2.4. Anchors ***/
+a {
+    text-decoration: none;
+    color: #579f72;
+}
+
+/*** 1.2.5. Page wrap ***/
+#page_wrap {
+    margin: 0 auto;
+}
+
+/* 2. Snail */
+/** 2.1. Track **/
+.track {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 305px;
+    position: relative;
+    width: 100%;
+}
+/** 2.2. Snail **/
+.track > .snail {
+    width: 250px;
+    height: 195px;
+    background: transparent;
+    bottom: 0px;
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+}
+/** 2.3. Shell **/ 
+.track > .snail > .shell {
+    background: url("../img/snail-shell-green.png") no-repeat scroll right bottom transparent;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    bottom: 11px;
+    height: 150px;
+    position: absolute;
+    width: 160px;
+    z-index: 2;
+    left: 12px;
+    cursor: pointer;
+}
+body.red .track > .snail > .shell {
+    background-image: url("../img/snail-shell-red.png");
+}
+body.orange .track > .snail > .shell {
+    background-image: url("../img/snail-shell-orange.png");
+}
+body.yellow .track > .snail > .shell {
+    background-image: url("../img/snail-shell-yellow.png");
+}
+body.blue .track > .snail > .shell {
+    background-image: url("../img/snail-shell-blue.png");
+}
+body.indigo .track > .snail > .shell {
+    background-image: url("../img/snail-shell-indigo.png");
+}
+body.violet .track > .snail > .shell {
+    background-image: url("../img/snail-shell-violet.png");
+}
+body.black .track > .snail > .shell {
+    background-image: url("../img/snail-shell-black.png");
+}
+body.white .track > .snail > .shell {
+    background-image: url("../img/snail-shell-white.png");
+}
+body.grey .track > .snail > .shell {
+    background-image: url("../img/snail-shell-grey.png");
+}
+/** 2.4. Percentage **/
+.track > .snail > .shell > .percentage {
+    font-family: Lobster;
+    position: absolute;
+    right: -33px;
+    top: 122px;
+    text-align: right;
+    display: inline-block;
+    font-size: 22px;
+    color: #ffff64;
+    text-shadow: 0px -1px 0px rgba(255,255,255,0.9), 0px 1px 2px rgba(0,0,0,0.5);
+}
+/** 2.5. Breathe in **/
+.track > .snail > .shell.breathe-in {
+   background-size: 96% auto;
+   -webkit-background-size: 96% auto;
+   -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+   transition: all 1s ease-out;
+}
+/** 2.6. Body **/
+.track > .snail > .body {
+    background: url(../img/snail-body.png) no-repeat bottom right transparent;
+    height: 195px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1;
+  -webkit-background-size: 250px 195px;
+          background-size: 250px 195px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.track > .snail > .body.contracted {
+  -webkit-background-size: 238px 195px;
+          background-size: 238px 195px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+
+}
+/** 2.7. Eyes **/
+.track > .snail > .body > .eye {
+    position: absolute;
+    z-index: 5;
+    width: 29px;
+    height: 29px;
+    background: transparent;
+    right: 4px;
+    top: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.track > .snail > .body > .eye.eye-left {
+    top: 53px;
+    right: 37px;
+}
+.track > .snail > .body > .eye > .upper-lash {
+    background: #f5e82d;
+    width: 29px;
+    height: 6%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px 5px 5px rgba(255,255,255,0.8) inset;
+}
+.track > .snail > .body > .eye > .lower-lash {
+    background: #f5e82d;
+    width: 29px;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    box-shadow: 0px -6px 6px rgba(0,0,0,0.2) inset;
+}
+.track > .snail > .body > .eye > .iris {
+    background: url(../img/snail-eye.png) no-repeat 0 0 transparent;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 6px;
+    left: 19px;
+}
+/** 2.8. Trail **/
+.track > .trail {
+    width: 5%;
+    height: 10px;
+    position: absolute;
+    background: #7fcb54;
+    bottom: 10px;
+    z-index: 1;
+    background-size: 90% 10px;
+    border-radius: 60% 0 0 20%;
+    box-shadow: 0 1px 7px #FFFFFF inset;
+}
+
+/** 2.9. Bubble holder **/
+.bubble-holder {
+    bottom: -50px;
+    font-family: Lobster;
+    font-size: 30px;
+    line-height: 30px;
+    position: absolute;
+    width: 100%;
+    text-shadow: 0px 1px 0px #fff;
+    font-weight: 300;
+}
+.bubble-holder > div {
+    text-align: center;
+    width: 100%;
+}
+
+/* 3. Counter*/
+/** 3.1. Info **/
+#counter .info {
+    color: #fff;
+    line-height: 1.3em;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.3em;
+    font-family: Lobster;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+}
+#counter .info p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#counter > .row > div {
+    position: relative;
+}
+#counter .info .number {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/* 4. Toggles */
+.toggle {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 2px solid #AAAAAA;
+    border-radius: 100% 100% 100% 100%;
+    box-shadow: 0 1px 5px #FFFFFF, 3px 5px 10px #FFFFFF inset, -1px -1px 7px rgba(0, 0, 0, 0.2) inset;
+    color: #111111;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    height: 80px;
+    line-height: 80px;
+    margin: 10px 30px;
+    outline: medium none !important;
+    text-align: center;
+    text-shadow: 0 -1px 1px #000000;
+    width: 80px;
+}
+.toggles {
+    display: inline-block;
+    margin: 80px auto 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.toggle:hover {
+    border-width: 4px;
+    border-color: #fff;
+    color: grey;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    
+}
+body.green .toggle:hover {
+    border-color: #7fcb54;
+    color: #7fcb54;
+}
+body.red .toggle:hover {
+    border-color: red;
+    color: red;
+}
+body.orange .toggle:hover {
+    border-color: orange;
+    color: orange;
+}
+body.yellow .toggle:hover {
+    border-color: yellow;
+    color: yellow;
+}
+body.blue .toggle:hover {
+    border-color: #11b3f2;
+    color: #11b3f2;
+}
+body.indigo .toggle:hover {
+    border-color: indigo;
+    color: indigo;
+}
+body.violet .toggle:hover {
+    border-color: violet;
+    color: violet;
+}
+body.black .toggle:hover {
+    border-color: black;
+    color: black;
+}
+body.white .toggle:hover {
+    border-color: white;
+    color: white;
+}
+body.grey .toggle:hover {
+    border-color: grey;
+    color: grey;
+}
+.toggle:active {
+    box-shadow: 0 1px 5px #FFFFFF, 3px -15px 10px #FFFFFF inset, -1px 10px 7px rgba(0, 0, 0, 0.2) inset;
+    color: #000;
+}
+
+/* 5. Screens */
+/** 5.1. Fixed **/
+section.fixed {
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+}
+/** 5.2. Parallax **/
+section.parallax {
+    background: url(../img/gradient.png) no-repeat 50% 1px #fff;
+    background-size: 100% 100%;
+    box-shadow: 0px -10px 10px rgba(0,0,0,0.5);
+    min-height: 290px;
+}
+.fixed .container {
+    position: relative;
+    z-index: 2;
+}
+.fixed .screen {
+    background: url(../img/bg-dot.png) repeat 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* 6. Slider */
+.fixed .slider {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #000;
+}
+/** 6.1. Slide **/
+.fixed .slider > .slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: 100% auto;
+}
+
+/* 7. Newsletter */
+.newsletter {
+    text-align: center;
+    width: 100%;
+}
+
+/* 8. Social */
+.social {
+    background: url("../img/social.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 25px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -1000em;
+    width: 25px;
+}
+.social.facebook:hover {
+    background-position: 0 -25px;
+}
+.social.twitter {
+    background-position: -31px 0;
+}
+.social.twitter:hover {
+    background-position: -31px -25px;
+}
+.social.linkedin {
+    background-position: -61px 0;
+}
+.social.linkedin:hover {
+    background-position: -61px -25px;
+}
+.social.myspace {
+    background-position: -92px 0;
+}
+.social.myspace:hover {
+    background-position: -92px -25px;
+}
+.social.blogger {
+    background-position: -123px 0;
+}
+.social.blogger:hover {
+    background-position: -123px -25px;
+}
+.social.delicious {
+    background-position: -154px 0;
+}
+.social.delicious:hover {
+    background-position: -154px -25px;
+}
+.social.youtube {
+    background-position: -186px 0;
+}
+.social.youtube:hover {
+    background-position: -186px -25px;
+}
+.social.yahoo {
+    background-position: -215px 0;
+}
+.social.yahoo:hover {
+    background-position: -215px -25px;
+}
+.float-right {
+    text-align: right;
+    vertical-align: bottom;
+}
+.hidden {
+    display: none;
+}
+
+/* 9. Logo */
+.logo {
+    display: inline-block;
+    height: 80px;
+    position: fixed;
+    z-index: 1000000;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -1000em;
+    top: 0;
+    width: 80px;
+    cursor: pointer;
+    overlay: none !important;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.logo:hover {
+    height: 100px;
+}
+.logo > .arrow-down {
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-top: 38px solid #7fcb54;
+    height: 0;
+    position: absolute;
+    width: 0;
+    bottom: 3px;
+    left: 2px;
+}
+body.red .logo > .arrow-down{
+    border-top: 40px solid red;
+}
+body.orange .logo > .arrow-down{
+    border-top: 40px solid orange;
+}
+body.yellow .logo > .arrow-down{
+    border-top: 40px solid yellow;
+}
+body.blue .logo > .arrow-down{
+    border-top: 40px solid #11b3f2;
+}
+body.indigo .logo > .arrow-down{
+    border-top: 40px solid indigo;
+}
+body.violet .logo > .arrow-down{
+    border-top: 40px solid violet;
+}
+body.black .logo > .arrow-down{
+    border-top: 40px solid black;
+}
+body.white .logo > .arrow-down{
+    border-top: 40px solid white;
+}
+body.grey .logo > .arrow-down{
+    border-top: 40px solid grey;
+}
+.logo > .rectangle {
+    height: 120px;
+    position: absolute;
+    width: 76px;
+    bottom: 41px;
+    left: 2px;
+    background: #7fcb54;
+}
+body.red .logo > .rectangle {
+    background-color: red;
+}
+body.orange .logo > .rectangle {
+    background-color: orange;
+}
+body.yellow .logo > .rectangle {
+    background-color: yellow;
+}
+body.blue .logo > .rectangle {
+    background-color: #11b3f2;
+}
+body.indigo .logo > .rectangle {
+    background-color: indigo;
+}
+body.violet .logo > .rectangle {
+    background-color: violet;
+}
+body.black .logo > .rectangle {
+    background-color: black;
+}
+body.white .logo > .rectangle {
+    background-color: white;
+}
+body.grey .logo > .rectangle {
+    background-color: grey;
+}
+.logo > .ribbon {
+    width: 80px;
+    height: 100%;
+    background: url(../img/ribbon.png) no-repeat bottom left transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo > .image {
+    background: url("../img/logo.png") no-repeat scroll center center transparent;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 3;
+    bottom: 20px;
+    left: 10px;
+}
+
+/* 10. Footer */
+.footer {
+    margin-top: 32px;
+}
+.footer .h3 {
+    vertical-align: bottom;
+    font-family: NovecentowideNormal;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+/* 11. Responsiveness */
+/* 11.1. Max 479px */
+@media (max-width: 479px) {
+    .track {
+        margin-top: -293px;
+    }
+    .fixed .slider > .slide {
+        background-size: auto 100%;
+    }
+    #counter {
+        padding-bottom: 250px;
+    }
+    .bubble-holder {
+        bottom: -60px;
+    }
+    .footer {
+        margin-bottom: 32px;
+    }
+    .footer .h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+/** 11.2. Min 480px **/
+@media (min-width: 480px) {
+    .track {
+        margin-top: -293px;
+    }
+    .fixed .slider > .slide {
+        background-size: auto 100%;
+    }
+    #counter {
+        padding-bottom: 250px;
+    }
+    .footer {
+        margin-bottom: 32px;
+    }
+   
+}
+/** 11.3. Min 768px **/
+@media (min-width: 768px) {
+    .track {
+        margin-top: -292px;
+    }
+    section.fixed {
+        min-height: 625px;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    section.parallax {
+        margin-top: 575px;
+        position: relative;
+        width: 100%;
+        z-index: 200;
+        margin-bottom: 0px;
+    }
+    .footer .h3 {
+        width: auto;
+    }
+}
+/** 11.4. Min 980px **/
+@media (min-width: 980px) {
+    section.parallax {
+        margin-top: 575px;
+    }
+    .track {
+        margin-top: -290px;
+    }
+}
+/** 11.5. Min 1200px **/
+@media (min-width: 1200px) {
+    .fixed .slider > .slide {
+        background-size: 100% auto;
+    }
+}

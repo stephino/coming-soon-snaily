@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var options = {
+                "sliderDuration": {
+                    description: "Slider duration",
+                    select: ".slider",
+                    attr: 'duration',
+                    type: 'int',
+                    values: [1000, 10000],
+                    default: 4000,
+                },
+                "date": {
+                    description: "Date",
+                    select: ".countdown",
+                    attr: 'date',
+                    type: 'date',
+                    default: '2029-01-01',
+                },
+                "color1": {
+                    description: "Color 1",
+                    select: ".countdown",
+                    attr: 'color1',
+                    type: 'color',
+                    default: '#808080',
+                },
+                "color2": {
+                    description: "Color 2",
+                    select: ".countdown",
+                    attr: 'color2',
+                    type: 'color',
+                    default: '#ffff00',
+                },
+                "snailColor": {
+                    description: "Snail color",
+                    select: "[snail=true]",
+                    attr: 'snail-color',
+                    type: 'array',
+                    values: ["red", "white", "grey", "black", "green", "blue", "orange", "yellow", "indigo"],
+                    default: "black",
+                },
+                "trailColor": {
+                    description: "Trail color",
+                    select: "[snail=true]",
+                    attr: 'trail-color',
+                    type: 'color',
+                    default: "#ffff00"
+                },
+                "snailPercent": {
+                    description: "Completion percent",
+                    select: "[snail=true]",
+                    attr: 'snail-percent',
+                    type: 'int',
+                    values: [0, 100],
+                    default: 50,
+                },
+                "dialogDuration": {
+                    description: "Dialog duration",
+                    select: "[snail=true]",
+                    attr: 'dialog-duration',
+                    type: 'int',
+                    values: [100, 10000],
+                    default: 4000
+                },
+                "snailDuration": {
+                    description: "Snail crawling speed",
+                    select: "[snail=true]",
+                    attr: 'snail-duration',
+                    type: 'int',
+                    values: [100, 20000],
+                    default: 10000
+                },
+            };
+        </script>
+        <script type="text/javascript" src="http://preview.stephino.com/js/frame.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Snaily</title>
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" href="css/bootstrap-modal.css"/>
+        <link rel="stylesheet" href="css/ie.css"/>
+        <link rel="stylesheet" href="css/jquery.jqplot.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="page_wrap">
+            <section class="fixed">
+                <div class="container">
+                    <a data-target="#about-us" data-toggle="modal" class="logo" href="javascript:void(0);">Company Name</a>
+                    <h1>Coming soon</h1>
+                    <h2>We're busy working on our new product</h2>
+                    <div class="countdown" date="2029-01-01" color1="grey" color2="yellow"></div>
+                </div>
+                <div class="screen"></div>
+                <div class="slider" duration="4000">
+                    <img src="img/slider/1.jpg"/>
+                    <img src="img/slider/2.jpg"/>
+                    <img src="img/slider/3.jpg"/>
+                </div>
+            </section>
+            <section id="content_wrap" class="parallax">
+                <div class="container">
+                    <div snail="true" snail-color="black" trail-color="yellow" snail-percent="50" dialog-duration="4000" snail-duration="10000">
+                        <span>Hello! My name is Snaily.</span>
+                        <span>We will launch soon...</span>
+                    </div>
+                    <div class="toggles">
+                        <div class="toggle" data-target="#newsletter" data-toggle="modal" title="Newsletter"><i class="icon">&#xF152;</i></div>
+                        <div class="toggle" data-target="#contact" data-toggle="modal" title="Contact"><i class="icon">&#xF13B;</i></div>
+                        <div class="toggle" data-target="#about-us" data-toggle="modal" title="About Us"><i class="icon">&#xF080;</i></div>
+                        <br/>
+                        <div class="footer">
+                            <span class="h3">Copyright &copy; 2013 Stephino. All rights reserved.</span>
+                            <a href="http://twitter.com/#" class="social twitter">Twitter</a>
+                            <a href="http://facebook.com/#" class="social facebook">Facebook</a>
+                            <a href="http://linkedin.com/#" class="social linkedin">Linkedin</a>
+                            <a href="http://youtube.com/#" class="social youtube">Youtube</a>
+                            <a href="http://yahoo.com/#" class="social yahoo">Yahoo</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!--Newsletter form-->
+        <div class="modal hide fade" id="newsletter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Subscribe to our newsletter</h3>
+            </div>
+            <div class="modal-body">
+                If you'd like to hear more from us, please send us your e-mail address.
+                <form method="post" action="/newsletter.php" class="validate text-center">
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                    <span class="btn  btn-large btn-block submit"><i class="icon-envelope"></i> Submit</span>
+                </form>
+            </div>
+        </div>
+        
+        <!--Contact form-->
+        <div class="modal hide fade" id="contact" tabindex="0" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Contact us</h3>
+            </div>
+            <div class="modal-body">
+                Don't hesitate to contact us.
+                <form method="post" action="/contact.php" class="validate text-center">
+                    <input class="input-block-level" name="name" type="text" placeholder="Name" required /><br/>
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                    <textarea class="input-block-level" name="content" placeholder="Your message" required ></textarea>
+                    <span class="btn  btn-large btn-block submit"><i class="icon-ok"></i> Send</span>
+                </form>
+            </div>
+        </div>
+        
+        <!--About us-->
+        <div class="modal hide fade" id="about-us" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>About us</h3>
+            </div>
+            <div class="modal-body">
+                We are a creative agency based in Europe.<br/>
+                Lorem ipsum dolor sit amet is the way we start all of our sentences.
+            </div>
+        </div>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+        <script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="js/jqplot.donutRenderer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </body>
+</html>
